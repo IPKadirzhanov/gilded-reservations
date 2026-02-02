@@ -213,7 +213,7 @@ const Booking = () => {
                         <FormLabel className="text-foreground">Телефон *</FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="+7 (900) 123-45-67"
+                            placeholder="+7 (747) 133-24-72"
                             className="bg-card/50 border-primary/20 focus:border-primary rounded-xl h-12"
                             {...field}
                           />
