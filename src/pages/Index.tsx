@@ -37,27 +37,21 @@ const advantages = [
 const packages = [
   {
     name: "Классический",
-    price: "от 5 000 ₽",
+    price: "от 5 000 Т",
     perPerson: "за гостя",
     features: ["Аренда зала 6 часов", "Базовое меню", "Сервировка", "Аудиосистема"],
     popular: false,
   },
   {
     name: "Премиум",
-    price: "от 8 500 ₽",
+    price: "от 8 500 Т",
     perPerson: "за гостя",
-    features: [
-      "Аренда зала 8 часов",
-      "Премиум меню",
-      "Декор зала",
-      "Ведущий и DJ",
-      "Фотограф 2 часа",
-    ],
+    features: ["Аренда зала 8 часов", "Премиум меню", "Декор зала", "Ведущий и DJ", "Фотограф 2 часа"],
     popular: true,
   },
   {
     name: "VIP",
-    price: "от 15 000 ₽",
+    price: "от 15 000 Т",
     perPerson: "за гостя",
     features: [
       "Аренда зала на весь день",
@@ -102,13 +96,7 @@ const Index = () => {
       {/* Hero Section with Video Background */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Video Background */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
+        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src={heroVideo} type="video/mp4" />
         </video>
 
@@ -140,11 +128,7 @@ const Index = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
               Банкетный зал премиум-класса
             </p>
@@ -166,8 +150,8 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10"
           >
-            Забронируйте дату онлайн за 1 минуту и создайте незабываемое событие
-            в атмосфере роскоши и безупречного сервиса
+            Забронируйте дату онлайн за 1 минуту и создайте незабываемое событие в атмосфере роскоши и безупречного
+            сервиса
           </motion.p>
 
           <motion.div
@@ -221,9 +205,7 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl bg-gradient-gold mx-auto mb-5 flex items-center justify-center shadow-gold">
                   <adv.icon size={28} className="text-primary-foreground" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                  {adv.title}
-                </h3>
+                <h3 className="font-display text-xl font-semibold text-foreground mb-2">{adv.title}</h3>
                 <p className="text-muted-foreground text-sm">{adv.description}</p>
               </GlassCard>
             </motion.div>
@@ -256,9 +238,7 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-primary text-sm font-medium mb-1">{service.desc}</p>
-                    <h3 className="font-display text-2xl font-semibold text-foreground">
-                      {service.title}
-                    </h3>
+                    <h3 className="font-display text-2xl font-semibold text-foreground">{service.title}</h3>
                   </div>
                 </div>
               </Link>
@@ -291,11 +271,7 @@ const Index = () => {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className={pkg.popular ? "md:-mt-4 md:mb-4" : ""}
             >
-              <GlassCard
-                className={`h-full relative ${
-                  pkg.popular ? "border-primary/50 shadow-gold-glow" : ""
-                }`}
-              >
+              <GlassCard className={`h-full relative ${pkg.popular ? "border-primary/50 shadow-gold-glow" : ""}`}>
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className="bg-gradient-gold text-primary-foreground text-xs font-semibold px-4 py-1.5 rounded-full">
@@ -304,9 +280,7 @@ const Index = () => {
                   </div>
                 )}
                 <div className="text-center mb-6 pt-2">
-                  <h3 className="font-display text-2xl font-semibold text-foreground mb-2">
-                    {pkg.name}
-                  </h3>
+                  <h3 className="font-display text-2xl font-semibold text-foreground mb-2">{pkg.name}</h3>
                   <p className="text-3xl font-bold text-gold-gradient">{pkg.price}</p>
                   <p className="text-muted-foreground text-sm">{pkg.perPerson}</p>
                 </div>
@@ -319,10 +293,7 @@ const Index = () => {
                   ))}
                 </ul>
                 <Link to="/booking" className="block">
-                  <Button
-                    variant={pkg.popular ? "gold" : "outline"}
-                    className="w-full"
-                  >
+                  <Button variant={pkg.popular ? "gold" : "outline"} className="w-full">
                     Запросить расчёт
                   </Button>
                 </Link>
@@ -333,11 +304,7 @@ const Index = () => {
       </Section>
 
       {/* Testimonials Section */}
-      <Section
-        subtitle="Отзывы"
-        title="Что говорят наши клиенты"
-        className="bg-chocolate-dark/50"
-      >
+      <Section subtitle="Отзывы" title="Что говорят наши клиенты" className="bg-chocolate-dark/50">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
@@ -374,12 +341,10 @@ const Index = () => {
         >
           <GlassCard className="text-center py-12 md:py-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Готовы создать{" "}
-              <span className="text-gold-gradient">незабываемое событие?</span>
+              Готовы создать <span className="text-gold-gradient">незабываемое событие?</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-              Оставьте заявку сейчас и получите бесплатную консультацию с нашим
-              event-менеджером
+              Оставьте заявку сейчас и получите бесплатную консультацию с нашим event-менеджером
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/booking">
@@ -401,11 +366,7 @@ const Index = () => {
       {/* Map Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-          >
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             <div className="rounded-3xl overflow-hidden border border-primary/20 h-[400px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3728853974825!2d37.618423!3d55.751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzA0LjUiTiAzN8KwMzcnMDYuMyJF!5e0!3m2!1sru!2sru!4v1234567890"
