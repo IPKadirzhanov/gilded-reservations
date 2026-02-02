@@ -25,7 +25,7 @@ const services = [
       "Фото и видео",
       "Лимузин для молодожёнов",
     ],
-    priceFrom: "от 350 000 ₽",
+    priceFrom: "от 1 000 000 Т",
   },
   {
     id: "corporate",
@@ -40,7 +40,7 @@ const services = [
       "Брендирование зала",
       "Трансфер сотрудников",
     ],
-    priceFrom: "от 200 000 ₽",
+    priceFrom: "от 1 500 000 Т",
   },
   {
     id: "birthday",
@@ -55,7 +55,7 @@ const services = [
       "Ведущий и музыка",
       "Фотозона",
     ],
-    priceFrom: "от 150 000 ₽",
+    priceFrom: "от 2 000 000 Т",
   },
   {
     id: "conference",
@@ -70,7 +70,7 @@ const services = [
       "Зона нетворкинга",
       "Техническая поддержка",
     ],
-    priceFrom: "от 80 000 ₽",
+    priceFrom: "от 500 000 Т",
   },
   {
     id: "party",
@@ -85,7 +85,7 @@ const services = [
       "DJ и танцпол",
       "VIP-сервис",
     ],
-    priceFrom: "от 250 000 ₽",
+    priceFrom: "от 750 000 Т",
   },
   {
     id: "banquet",
@@ -100,7 +100,7 @@ const services = [
       "Парковка",
       "Гардероб",
     ],
-    priceFrom: "от 100 000 ₽",
+    priceFrom: "от 900 000 Т",
   },
 ];
 
