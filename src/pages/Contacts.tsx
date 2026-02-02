@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Телефон",
-    value: "+7 (900) 123-45-67",
-    link: "tel:+79001234567",
+    value: "+7 (747) 133-24-72",
+    link: "tel:+77471332472",
     description: "Звоните с 10:00 до 22:00",
   },
   {
@@ -24,9 +24,9 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Адрес",
-    value: "г. Москва, ул. Примерная, д. 123",
+    value: "г. Алматы, ул. Наурызбай батыр, д. 85",
     link: "https://maps.google.com",
-    description: "Станция метро Примерная",
+    description: "Станция метро ",
   },
   {
     icon: Clock,
@@ -37,7 +37,7 @@ const contactInfo = [
 ];
 
 const Contacts = () => {
-  const whatsappLink = "https://wa.me/79001234567?text=Здравствуйте! Хочу узнать о бронировании зала.";
+  const whatsappLink = "https://wa.me/77471332472?text=Здравствуйте! Хочу узнать о бронировании зала.";
 
   return (
     <div className="min-h-screen">
@@ -127,7 +127,7 @@ const Contacts = () => {
         >
           <div className="rounded-3xl overflow-hidden border border-primary/20 h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3728853974825!2d37.618423!3d55.751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzA0LjUiTiAzN8KwMzcnMDYuMyJF!5e0!3m2!1sru!2sru!4v1234567890"
+              src="https://go.2gis.com/VWKqi"
               width="100%"
               height="100%"
               style={{ border: 0 }}
