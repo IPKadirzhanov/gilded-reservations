@@ -68,13 +68,13 @@ const packages = [
 const testimonials = [
   {
     name: "Анна и Дмитрий",
-    event: "Свадьба, июнь 2024",
+    event: "Свадьба, июнь 2025",
     text: "Это был самый волшебный день в нашей жизни! Команда Royal Hall продумала каждую деталь. Гости до сих пор в восторге!",
     rating: 5,
   },
   {
     name: "Михаил Петров",
-    event: "Корпоратив, декабрь 2024",
+    event: "Корпоратив, декабрь 2025",
     text: "Провели здесь новогодний корпоратив на 150 человек. Безупречный сервис, отличная кухня и внимание к мелочам.",
     rating: 5,
   },
@@ -369,7 +369,7 @@ const Index = () => {
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
             <div className="rounded-3xl overflow-hidden border border-primary/20 h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3728853974825!2d37.618423!3d55.751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzA0LjUiTiAzN8KwMzcnMDYuMyJF!5e0!3m2!1sru!2sru!4v1234567890"
+                src="https://go.2gis.com/VWKqi"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
